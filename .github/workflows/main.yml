@@ -24,6 +24,7 @@ jobs:
           echo "IMAGE_NAME: $IMAGE_NAME"
           docker build -t $DOCKERHUB_USERNAME/$IMAGE_NAME .
           docker push $DOCKERHUB_USERNAME/$IMAGE_NAME:latest
+          
   test:
     runs-on: ubuntu-latest
     steps:
